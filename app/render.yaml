@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: sanitation_project
+    env: docker
+    autoDeploy: false
