@@ -1,6 +1,7 @@
-tensorflow-cpu
+tensorflow
 fastapi
 uvicorn
+io
 python-multipart
 pillow
 gunicorn
