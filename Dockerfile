@@ -11,7 +11,7 @@ COPY ./main.py  /code/main.py
 
 COPY ./saved_model /code/saved_model
 
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 
 
