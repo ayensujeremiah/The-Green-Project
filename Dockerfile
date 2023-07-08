@@ -7,7 +7,9 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade --default-timeout=1000 -r /code/requirements.txt
 
 
-COPY ./app/api  /code/api
+COPY ./main.py  /code/main.py
+
+COPY ./saved_model /code/saved_model
 
 CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "80"]
 
