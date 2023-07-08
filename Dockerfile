@@ -4,7 +4,7 @@ WORKDIR /code
 
 COPY ./requirements.txt /code/requirements.txt
 
-RUN RUN pip install --no-cache-dir --upgrade --default-timeout=1000 -r /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade --default-timeout=1000 -r /code/requirements.txt
 
 
 COPY ./app/api  /code/api
