@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir --upgrade --default-timeout=1000 -r /code/require
 
 COPY ./main.py  /code/main.py
 
-COPY ./saved_model /code/saved_model
+COPY ./dumpinn /code/dumpinn
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
