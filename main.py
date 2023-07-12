@@ -22,18 +22,14 @@ app.add_middleware(
 )
 
 
-MODEL = tf.keras.models.load_model("saved_model")
+MODEL = tf.keras.models.load_model("dumpinn")
 
-CLASS_NAMES = ['battery', 
-               'biological', 
-               'clothes', 
+CLASS_NAMES = ['can', 
                'glass', 
-               'metal', 
                'paper', 
                'plastic', 
                'rubber', 
-               'shoes', 
-               'trash'
+               'styrofoam'
                ]
 
 
